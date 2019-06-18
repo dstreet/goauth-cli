@@ -1,0 +1,36 @@
+{
+  "name": "goauth-cli",
+  "version": "1.0.1",
+  "description": "Dead-simple Google OAuth v2 login for the command line.",
+  "keywords": [
+    "google",
+    "google api",
+    "oauth",
+    "oauth v2",
+    "cli",
+    "command line"
+  ],
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check"
+  },
+  "author": "David Street <street.davide@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "googleapis": "^40.0.0",
+    "open": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.8",
+    "gts": "^1.0.0",
+    "typescript": "^3.5.2"
+  }
+}
